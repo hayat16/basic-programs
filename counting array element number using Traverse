@@ -1,0 +1,24 @@
+#include<stdio.h>
+int traverse(int a[],int n)
+{
+    int LB=5;
+    int UB=100;
+    int count=0,i;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>=LB && a[i]<=UB)
+        {
+            count=count+1;
+        }
+    }
+    printf("%d",count);
+
+}
+
+int main()
+{
+    int a[]={5,6,7,10,5,6,9,100,15};
+    int n=sizeof(a)/sizeof(a[0]);
+
+ traverse(a,n);
+}
