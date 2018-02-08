@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+long long int factorial(int n)
+{
+
+if (n == 0)
+    return 1;
+  else
+    return(n * factorial(n-1));
+
+
+
+}
+int main()
+{
+    long long int n,r,k,p,s,nCr,nPr;
+    printf("Enter the value of n & r: ");
+    scanf("%lld%lld",&n,&r);
+    k=factorial(n);
+    p=factorial(r);
+    s=factorial(n-r);
+    nPr=k/s;
+    nCr=(k/(p*s));
+
+     printf("\n%lldP%lld = %lld",n,r,nPr);
+
+    printf("\n%lldC%lld = %lld",n,r,nCr);
+}
