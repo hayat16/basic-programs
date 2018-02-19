@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i;
+    char a[100],b[100],l;
+    scanf("%s",a);
+    l=strlen(a);
+    for(i=0; i<l; i++)
+    {
+        if( isupper(a[i]))
+        {
+            a[i]=a[i]+32;
+
+        }
+        else if(islower(a[i]))
+        {
+            a[i]=a[i]-32;
+
+        }
+    }
+    printf("%s",a);
+}
+
