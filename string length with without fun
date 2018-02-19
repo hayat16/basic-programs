@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i,j,count=0,l;
+    char a[10]={'1','2','3','4'};
+    char x[10]="mysha";
+    for(i=0;x[i]!='\0';i++)
+    {
+        count++;
+    }
+    printf("without fun length %d\n",count);
+
+
+    l=strlen(a);
+    printf("\nwith fun length %d",l);
+}
