@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string s;
+    cin>>s;
+    int a=s.size()-1;
+
+    if(s[a]%2==0)
+    {
+        cout<<"divisible by 2"<<endl;
+    }
+
+    int sum=0;
+    for(int i=0; i<=a; i++)
+    {
+        sum=sum+s[i];
+    }
+    if(sum%3==0)
+    {
+        cout<<"Divisible by 3"<<endl;
+    }
+    if(s[a]=='5' ||s[a]=='0')
+    {
+        cout<<"Divisible by 5"<<endl;
+    }
+
+    return 0;
+}
