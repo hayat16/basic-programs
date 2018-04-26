@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,sum1=0,sum2=0;
+    string s;
+    cin>>s;
+    for(i=0; i<s.size(); i++)
+    {
+        if(i%2==0)//even position
+        {
+            sum1=sum1+s[i]-48;
+        }
+        if(i%2!=0) //odd position
+        {
+            sum2=sum2+s[i]-48;
+        }
+    }
+    int diff=sum1-sum2;
+    if(diff=='0')
+    {
+        cout<<"Divisible by 11"<<endl;
+    }
+    if(diff%11==0)
+    {
+        cout<<"Divisible by 11"<<endl;
+    }
+    else
+    {
+        cout<<"Not divisible by 11"<<endl;
+    }
+    return 0;
+}
